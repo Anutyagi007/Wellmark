@@ -46,7 +46,9 @@
   size-adjust: 88.82%;
   src: local('Arial');
 }
-
+.hero h1{
+  color: blue;
+}
 @font-face {
   font-family: roboto-fallback;
   size-adjust: 99.529%;
