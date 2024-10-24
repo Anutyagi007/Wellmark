@@ -10,6 +10,7 @@
 .cards > ul > li {
   border: 1px solid #dadada;
   background-color: var(--background-color);
+  border-radius: 10px;
 }
 
 .cards .cards-card-body {
@@ -22,19 +23,21 @@
 
 .cards > ul > li img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 4/3;
   object-fit: cover;
 }
-.cards-card-body > strong > p{
+
+.cards-card-body > p > strong {
   font-weight: 700;
   font-size: 20px;
   text-decoration: underline;
-  font-family: 'roboto';
+  font-family: "roboto";
   color: #005589;
 }
-.cards-card-body > p{
+
+.cards-card-body p {
   font-weight: 400;
-  font-family: 'roboto';
+  font-family: "roboto";
   line-height: 24px;
   font-size: 16px;
   color: #4B4C4D;
