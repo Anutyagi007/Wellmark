@@ -1,6 +1,9 @@
 .promo-no-image-container {
-    text-align: center;
-
+    .default-content-wrapper{
+        h2{
+            text-align: center;
+        }
+    }
     .promo-no-image {
         >ul {
             list-style: none;
@@ -9,10 +12,11 @@
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
             grid-gap: 24px;
-
             >li {
                 padding: 24px;
                 background-color: var(--background-color);
+                place-self: center;
+                align-self: center;
 
                 .cards-card-image {
                     line-height: 0;
