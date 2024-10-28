@@ -9,28 +9,25 @@
             list-style: none;
             margin: 0;
             padding: 0;
-            display: flex;
-            // grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
-            // grid-gap: 24px;
-            align-items: center;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
+            grid-gap: 24px;
             gap: 24px;
-            @include for-mobile {
-                flex-direction: column;
-              }
+            // @include for-mobile {
+            //     flex-direction: column;
+            //   }
               @include for-tablet {
-                justify-content: space-evenly;
-                flex-wrap: wrap;
+                grid-template-columns: repeat(2,1fr);
               }
-              @include for-laptop {
-                justify-content: space-around;
-              }
-              @include for-large {
-                justify-content: space-between;
-              }
-              @include for-xlarge {
-                justify-content: space-between;
-              }
+            //   @include for-laptop {
+            //     justify-content: space-around;
+            //   }
+            //   @include for-large {
+            //     justify-content: space-between;
+            //   }
+            //   @include for-xlarge {
+            //     justify-content: space-between;
+            //   }
             >li {
                 padding: 24px;
                 background-color: var(--background-color);
