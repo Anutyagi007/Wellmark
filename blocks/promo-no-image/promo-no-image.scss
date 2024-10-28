@@ -15,11 +15,13 @@
             align-items: center;
             justify-content: center;
             gap: 24px;
-            @include for-nonmobile {
-                justify-content: space-between;
+            @include for-mobile {
+                // justify-content: space-between;
+                flex-direction: row;
               }
               @include for-tablet {
                 justify-content: space-around;
+                flex-wrap: wrap;
               }
               @include for-laptop {
                 gap: $--spacing-huge;
