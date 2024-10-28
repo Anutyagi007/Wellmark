@@ -16,21 +16,20 @@
             justify-content: center;
             gap: 24px;
             @include for-mobile {
-                // justify-content: space-between;
                 flex-direction: row;
               }
               @include for-tablet {
-                justify-content: space-around;
+                justify-content: space-evenly;
                 flex-wrap: wrap;
               }
               @include for-laptop {
-                gap: $--spacing-huge;
+                justify-content: space-around;
               }
               @include for-large {
-                gap: $--spacing-jumbo;
+                justify-content: space-between;
               }
               @include for-xlarge {
-                gap: $--spacing-jumbo;
+                justify-content: space-between;
               }
             >li {
                 padding: 24px;
