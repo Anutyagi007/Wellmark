@@ -16,7 +16,7 @@
             justify-content: center;
             gap: 24px;
             @include for-mobile {
-                flex-direction: row;
+                flex-direction: column;
               }
               @include for-tablet {
                 justify-content: space-evenly;
