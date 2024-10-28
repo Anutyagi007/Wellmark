@@ -13,21 +13,12 @@
             grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
             grid-gap: 24px;
             gap: 24px;
-            // @include for-mobile {
-            //     flex-direction: column;
-            //   }
-              @include for-tablet {
+            @include for-mobile {
+                grid-template-columns: 1fr;
+            }
+            @include for-tablet {
                 grid-template-columns: repeat(2,1fr);
-              }
-            //   @include for-laptop {
-            //     justify-content: space-around;
-            //   }
-            //   @include for-large {
-            //     justify-content: space-between;
-            //   }
-            //   @include for-xlarge {
-            //     justify-content: space-between;
-            //   }
+            }
             >li {
                 padding: 24px;
                 background-color: var(--background-color);
