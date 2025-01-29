@@ -9,17 +9,17 @@ indices:
       url:
         select: head > meta[property="og:url"]
         value: |
-          value: attribute(el, "content")
+         attribute(el, "content")
       description:
         select: head > meta[property="og:description"]
         value: |
-          value: attribute(el, "content")
+         attribute(el, "content")
       title:
         select: head > meta[property="og:title"]
         value: |
-          value: attribute(el, "content")
+         attribute(el, "content")
       image:
         select: head > meta[property="og:image"]
         value: |
-          value: attribute(el, "content")
+         attribute(el, "content")
       
