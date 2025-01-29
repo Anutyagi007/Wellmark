@@ -22,4 +22,7 @@ indices:
         select: head > meta[property="og:image"]
         value: |
          attribute(el, "content")
-      
+      promo-image:
+        select: main ul .cards-card-image picture img
+        value: |
+          attribute(el, "src")
