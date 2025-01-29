@@ -23,14 +23,14 @@ indices:
         value: |
          attribute(el, "content")
       date:
-        select: head > meta[property="og:published"]
+        select: head > meta[name="published"]
         value: |
          attribute(el, "content")
       article-time:
-        selectFirst: head > meta[property="og:article-read-time"]
+        selectFirst: head > meta[name="article-read-time"]
         value: |
          attribute(el, "content")
       category:
-        select: head > meta[property="og:categories"]
+        select: head > meta[name="categories"]
         value: |
          attribute(el, "content")
