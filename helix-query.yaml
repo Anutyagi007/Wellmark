@@ -23,6 +23,6 @@ indices:
         value: |
          attribute(el, "content")
       promo-image:
-        select: main ul .cards-card-image picture img
+        select: main img
         value: |
           attribute(el, "src")
