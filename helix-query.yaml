@@ -23,7 +23,7 @@ indices:
         value: |
          attribute(el, "content")
       date:
-        select: body main .date p span 
+        select: body main .blog-article-information-container .blog-article-information-wrapper .blog-article-information div .date p span 
         value: |
           textContent(el)
       article-time:
