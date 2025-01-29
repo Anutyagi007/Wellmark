@@ -23,6 +23,6 @@ indices:
         value: |
          attribute(el, "content")
       promo-image:
-        select: main img
+        select: body main img
         value: |
           attribute(el, "src")
