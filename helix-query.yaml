@@ -51,7 +51,7 @@ indices:
         value: |
          attribute(el, "content")
       tags:
-        select: head > meta[name="article:tags"]
+        select: head > meta[name="article:tag"]
         value: |
          attribute(el, "content")
       
