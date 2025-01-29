@@ -22,11 +22,15 @@ indices:
         select: head > meta[property="og:image"]
         value: |
          attribute(el, "content")
-      promo-image:
-        select: body main img
-        value: |
-          attribute(el, "src")
       date:
         select: body main .date p span 
+        value: |
+          textContent(el)
+      article-time:
+        selectFirst: body main .article-link p
+        value: |
+          textContent(el)
+      category:
+        select: body main .article-link p
         value: |
           textContent(el)
