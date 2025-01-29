@@ -26,3 +26,7 @@ indices:
         select: body main img
         value: |
           attribute(el, "src")
+      date:
+        select: body main .date p span 
+        value: |
+          textContent(el)
