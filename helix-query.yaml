@@ -34,3 +34,11 @@ indices:
         select: head > meta[name="categories"]
         value: |
          attribute(el, "content")
+      theme:
+        select: head > meta[name="theme"]
+        value: |
+         attribute(el, "content")
+      template:
+        select: head > meta[name="template"]
+        value: |
+         attribute(el, "content")
