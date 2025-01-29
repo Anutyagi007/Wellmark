@@ -23,14 +23,14 @@ indices:
         value: |
          attribute(el, "content")
       date:
-        select: body main .blog-article-information-container .blog-article-information-wrapper .blog-article-information div .date p span 
+        select: head > meta[property="og:published"]
         value: |
-          textContent(el)
+         attribute(el, "content")
       article-time:
-        selectFirst: body main .article-link p
+        selectFirst: head > meta[property="og:article-read-time"]
         value: |
-          textContent(el)
+         attribute(el, "content")
       category:
-        select: body main .article-link p
+        select: head > meta[property="og:categories"]
         value: |
-          textContent(el)
+         attribute(el, "content")
