@@ -1,7 +1,7 @@
 indices:
   mysite:
     include:
-      - /**
+      - /Nutrition/**
     exclude:
       - /documents/snippets/**
     target: /query-index.json
@@ -26,7 +26,7 @@ indices:
         select: head > meta[name="published"]
         value: |
          attribute(el, "content")
-      article-time:
+      read-time:
         selectFirst: head > meta[name="article-read-time"]
         value: |
          attribute(el, "content")
@@ -48,10 +48,6 @@ indices:
           parseTimestamp(headers['last-modified'],'ddd, DD MM YYYY hh:mm:ss GMT')
       author:
         select: head > meta[name="author"]
-        value: |
-         attribute(el, "content")
-      tags:
-        select: head > meta[property="article:tag"]
         value: |
          attribute(el, "content")
       
