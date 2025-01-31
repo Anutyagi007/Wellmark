@@ -2,6 +2,7 @@ indices:
   mysite:
     include:
       - /Nutrition/**
+      - /Medicare/**
     exclude:
       - /documents/snippets/**
     target: /query-index.json
