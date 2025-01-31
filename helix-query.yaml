@@ -22,11 +22,11 @@ indices:
         select: head > meta[property="og:image"]
         value: |
          attribute(el, "content")
-      published-date:
+      publishedDate:
         select: head > meta[name="published"]
         value: |
          attribute(el, "content")
-      read-time:
+      readTime:
         selectFirst: head > meta[name="article-read-time"]
         value: |
          attribute(el, "content")
