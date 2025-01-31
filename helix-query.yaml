@@ -1,7 +1,7 @@
 indices:
   mysite:
     include:
-      - /Nutrition/**
+      - /**
     exclude:
       - /documents/snippets/**
     target: /query-index.json
